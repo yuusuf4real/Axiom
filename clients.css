@@ -1,0 +1,332 @@
+body {
+    font-family: "Nunito Sans",sans-serif;
+    font-weight: 300;
+    overflow-y: scroll;
+}
+
+header .navbar .navbar-brand {
+  margin-right: 0;
+  max-width: 8rem;
+}
+header .navbar-nav {
+  margin-left: auto;
+}
+
+.logo {
+    height: 10rem;
+    width: 20em;
+    margin-left: -4rem;
+}
+
+#menu-items {
+    margin-top: 4rem;
+    margin-right: 8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 750;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+.btn,
+button {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+.btn-primary {
+  background: #104d8e;
+  border-color: #104d8e;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #1566bc;
+  border-color: #1566bc;
+}
+.btn-secondary {
+  background: #3594d0;
+  border-color: #3594d0;
+  color: #fff;
+}
+
+.btn-tertiary {
+  background: #58c9ed;
+  border-color: #58c9ed;
+  color: #fff;
+}
+.btn-tertiary:hover {
+  color: #fff;
+  background: #86d8f2;
+  border-color: #86d8f2;
+}
+.btn-complimentary {
+  background: #1862a0;
+  border-color: #1862a0;
+  color: #fff;
+}
+.btn-complimentary:hover {
+  color: #fff;
+  background: #114774;
+  border-color: #114774;
+}
+.btn-outline {
+  background: 0 0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+}
+
+.menu-itemSize {
+    font-size: 1.7rem;
+    
+    margin-right: 1rem;
+}
+
+#register {
+    font-size: 2rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    margin-right: -8rem;
+    margin-left: 1rem;
+}
+
+#register:hover {
+  color: #fff;
+  background: #5eaada;
+  border-color: #5eaada;
+} 
+
+.thick-hr {
+  border: 0.1px solid lightgrey;
+}
+
+.page-header {
+    border-top: solid 0.1rem #104d8e;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.client {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3.5rem;
+    color: #104d8e;
+    font-weight: 500;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    color: #3594d0;
+    font-weight: 500;
+}
+
+#container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about-img {
+    width: 90%;
+    margin-left: 7rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.imgDescr {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  font-size: 1.7rem;
+  max-width: 90%;
+}
+
+#form-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+#form-label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.pre-footer {
+  background: #a5a5a5 url(img/footer-bg.png) no-repeat center center;
+  background-attachment: fixed;
+  margin-top: 15rem;
+  color: #fff;
+  position: relative;
+}
+
+.pre-footer h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.pre-footer p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  color: #fff;
+  background: #0b3460;
+  padding-top: 4rem;
+}
+footer img.brand {
+  margin-bottom: 2rem;
+  max-width: 180px;
+}
+footer p {
+  line-height: 1.3;
+  font-size: 0.9rem;
+}
+footer img.rec {
+  max-width: 180px;
+}
+footer img.ico {
+  max-width: 100px;
+}
+footer img + img {
+  margin-left: 1rem;
+}
+footer address {
+  font-size: 0.9rem;
+}
+footer address a {
+  color: inherit;
+  display: table;
+}
+footer address a:hover {
+  color: #3594d0;
+}
+footer .legalese {
+  padding: 2rem 0;
+  font-size: 0.8rem;
+}
+footer .legalese a {
+  color: #1862a0;
+}
+footer .legalese a:hover {
+  color: #3594d0;
+}
+footer .legalese a + a {
+  margin-left: 1rem;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/parallaxImg.jpg");
+
+  /* Set a specific height */
+  min-height: 350px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.allheader {
+    display: block;
+    font-size: 3em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#question {
+  margin-top: 9rem;
+}
+
+#para2 {
+  font-size: 2rem;
+}
+
+#footerDesc {
+  font-size: 1.5rem;
+}
+
+#contact {
+  font-size: 2rem;
+  background: #104d8e;
+  border-color: #104d8e;
+}
+
+#contact :hover {
+  background: #5eaada;
+  border-color: #5eaada;
+}
+
+.foot-container {
+  height: 38rem;
+}
+
+#icons {
+  margin-top: -6rem;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg-overlay.bg-overlay-meed {
+  background: linear-gradient(
+    0deg,
+    rgba(16, 77, 142, 0.52) 10%,
+    rgba(88, 201, 237, 0.73) 100%
+  );
+}
+.bg-overlay.bg-overlay-pink {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #fff);
+}
+.bg-overlay.bg-overlay-green {
+  background-image: linear-gradient(
+    0deg,
+    rgba(253, 187, 45, 0.52) 0,
+    rgba(34, 193, 195, 0.73) 100%
+  );
+}
+.bg-overlay.bg-overlay-green-inverted {
+  background-image: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 0.73) 0,
+    rgba(253, 187, 45, 0.52) 100%
+  );
+}
+.bg-overlay.bg-overlay-mimosa {
+  background: linear-gradient(
+    0deg,
+    rgba(102, 57, 72, 0.52) 0,
+    rgba(218, 174, 81, 0.73) 100%
+  );
+}
+.bg-overlay.bg-overlay-water {
+  background: linear-gradient(
+    0deg,
+    rgba(227, 255, 231, 0.52) 0,
+    rgba(217, 231, 255, 0.73) 100%
+  );
+}
