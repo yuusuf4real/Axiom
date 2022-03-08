@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -26,7 +28,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm">
+    <!-- <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">
@@ -43,7 +45,32 @@
                 <button id="register" class="btn btn-primary navbar-btn">Register</button>
 
         </div>
-    </nav>
+    </nav> -->
+
+
+
+
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/axiomGreenPNG.png" class="logo" />
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-ul" id="nav-ul">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="candidates.html">Candidates</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="btn-register">Register</button>
+            </nav>
+        </div>
+    </header>
+
+
     <hr class="thick-hr" />
 
 
@@ -66,35 +93,36 @@
     
                 <p class="form-text">Send us a message with this form and a member of our team will be in touch with you soon.</p>
     
-                <form name="form" wp-ajax-form="" captcha-action="contact" post-action="process_contact" post-type="contact"
-                    post-nonce="contact_nonce" class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-email form-field">
+                <form id="contact-form" method="post" action="contact.php">
+
                     <div class="form-group animate__animated animate__slideInUp" style="--animate-duration:0.5s;">
                         <label id="form-title" class="required">Full Name <span>*</span></label>
-                        <input id="inputtext" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                        <input id="inputtext" name="fullName" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
                             placeholder="Full name" ng-model="vm.data.fullname" ng-required="true" required="required">
                     </div>
+
                     <div class="form-group animate__animated animate__slideInUp" style="--animate-duration:1s;">
                         <label id="form-title" class="required">Email <span>*</span></label>
-                        <input id="inputtext"
+                        <input id="inputtext" name="email"
                             class="form-control ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required"
                             type="email" placeholder="Email" ng-model="vm.data.email" ng-required="true"
                             required="required">
                     </div>
                     <div class="form-group animate__animated animate__slideInUp" style="--animate-duration:1.5s;">
                         <label id="form-title" class="required">Phone <span>*</span></label>
-                        <input id="inputtext" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                        <input id="inputtext" name="phoneNo" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
                             type="phone" placeholder="Phone" ng-model="vm.data.phone" ng-required="true"
                             required="required">
                     </div>
                     <div class="form-group animate__animated animate__slideInUp" style="--animate-duration:2s; ">
                         <label id="form-title" class="required">Message <span>*</span></label>
-                        <textarea id="inputtext" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                        <textarea id="inputtext" name="message" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
                             placeholder="Type your message here" ng-model="vm.data.message" ng-required="true"
                             required="required"></textarea>
                     </div>
                     <div class="form-button">
                         <button type="submit" ng-disabled="form.$invalid" class="btn btn-secondary btn-block"
-                            disabled="disabled">Submit</button>
+                            id="submit">Submit</button>
                     </div>
                 </form>
     
@@ -169,7 +197,14 @@
     
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUl = document.getElementById('nav-ul');
 
+        hamburger.addEventListener('click', () => {
+            navUl.classList.toggle('show');
+        })
+    </script>
 
     </body>
     
